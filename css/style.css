@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-image: url("/pexels-scott-webb-3255761.jpg");
+}
+
+.navbar-nav > li{
+    padding-left:20px;
+    padding-right:20px;
+  }
+
+  .navbar-nav > li{
+    margin-left:20px;
+    margin-right:20px;
+  }
+
+  .main-form {
+    width: 450px;
+    margin: auto;
+}
