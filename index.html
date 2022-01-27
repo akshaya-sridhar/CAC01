@@ -15,20 +15,6 @@
 </head>
 <body>
 
-    <!-- <style>
-        #intro {
-          background-image: url("./pexels-pixabay-267885.jpg");
-          height: 100vh;
-        }
-  
-        /* Height for devices larger than 576px */
-        @media (min-width: 992px) {
-          #intro {
-            margin-top: -58.59px;
-          }
-        }
-    </style>     -->
-
     <!-- Navbar -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <a href="#" class="navbar-brand"><img src="school_black_24dp.svg"> Christ University</a>
@@ -46,6 +32,10 @@
             </ul>
         </div>
     </nav>
+
+    <div class="container-fluid">
+      <h3>Fill the feedback form and let us know your opinion!</h3>
+    </div>
 
     <!-- Form -->
     <form action="" class="main-form needs-validation" novalidate>
@@ -68,35 +58,86 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username" class="form-control" required>
-            <div class="invalid-feedback">Please enter a valid username.</div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" required>
+            <div class="invalid-feedback">Please enter a valid emailID.</div>
         </div>
+        
         <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" class="form-control">
+                <label for="exampleFormControlTextarea1">Address</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-        <div class="form-group">
-            <label for="gender">Gender</label>
-            <select name="gender" id="gender" class="form-control">
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-            </select>
+        
+        <fieldset class="form-group">
+        <label for="preferences">Select what you loved about the university: </label>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Student
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+            <label class="form-check-label" for="defaultCheck2">
+              Location
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+            <label class="form-check-label" for="defaultCheck3">
+              Campus
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+            <label class="form-check-label" for="defaultCheck4">
+              Atmosphere
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+            <label class="form-check-label" for="defaultCheck5">
+              Dorm Room
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+            <label class="form-check-label" for="defaultCheck6">
+              Sports
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="preferences">How did you come to know about the university? </label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+          <label class="form-check-label" for="exampleRadios1">
+            Friends
+          </label>
         </div>
         <div class="form-check">
-            <input type="checkbox" id="accept-terms" class="form-check-input">
-            <label for="accept-terms" class="form-check-label">Accept Terms &amp; Conditions</label>
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Internet
+          </label>
         </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+          <label class="form-check-label" for="exampleRadios3">
+            Television
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+          <label class="form-check-label" for="exampleRadios4">
+            Other
+          </label>
+          <label for="exampleFormControlTextarea1"></label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+      </fieldset>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-
     <script>
         var form = document.querySelector('.needs-validation');
 
