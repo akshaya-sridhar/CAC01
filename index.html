@@ -211,7 +211,7 @@
         }
         function checkpswd()
         {
-        var re = /^(?=.* [a-z])(?=.* [A-Z])(?=.* \d)(?=.* [~`!@#$%^_+={}|:"<>,.?])[A-Za-z\d@$!%*?&]{8,}$/;
+        var re = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[~`!@#$%^_+={}|:"<>,.?])[A-Za-z\d@$!%*?&]{8,}$/;
         var receivedpswd = document.getElementById("password").value.trim();
               if (!(re.test(receivedpswd))) {
                   window.alert("Please enter good password.");
