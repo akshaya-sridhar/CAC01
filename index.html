@@ -44,6 +44,7 @@
     </div>
 
     <!-- Form -->
+    <div id="mainform">
     <form action="" class="main-form needs-validation" novalidate>
         <div class="row">
             <div class="col">
@@ -167,7 +168,7 @@
         <button type="submit" class="btn btn-primary" value="Submit">Submit</button>
         <button type="reset" class="btn btn-primary" value="Reset">Reset Form</button>
     </form>
-
+  </div>
     <!-- Java Script -->
     <script>
         var form = document.querySelector('.needs-validation');
@@ -210,18 +211,17 @@
         }
         function checkpswd()
         {
-        // var re = /^(?=.* [a-z])(?=.* [A-Z])(?=.* \d)(?=.* [~`!@#$%^_+={}|:"<>,.?])[A-Za-z\d@$!%*?&]{8,}$/;
-        var re= /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,16}$/;
+        var re = /^(?=.* [a-z])(?=.* [A-Z])(?=.* \d)(?=.* [~`!@#$%^_+={}|:"<>,.?])[A-Za-z\d@$!%*?&]{8,}$/;
         var receivedpswd = document.getElementById("password").value.trim();
-              if (!(re.match(receivedpswd))) {
+              if (!(re.test(receivedpswd))) {
                   window.alert("Please enter good password.");
                   return;
         }
         }
 
-        function done()
+        function reset()
         {
-          window.alert('Form submitted sucessfully!')
+          document.getElementById("mainform").reset();
         }
 
     </script>
